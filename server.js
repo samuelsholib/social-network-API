@@ -14,11 +14,13 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-const connectionStringURI = `mongodb://127.0.0.1:27017/toughtsDBDB`;
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/toughtsDB', {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// });
+//const connectionStringURI = `mongodb://127.0.0.1:27017/toughtsDB`;
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/toughtsDB', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+
 
 // Use this to log mongo queries being executed!
 mongoose.set('debug', true);
