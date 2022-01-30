@@ -1,12 +1,29 @@
 const router = require('express').Router();
 
-//Set requirements (from users-controller)
 const {
     getAllUsers,
     getUserById,
+    createUser,
+    updateUsers,
     deleteUser,
-    createUser
-} = require('../../controllers/users-routes');
+    addFriend,
+    deleteFriend
 
+} = require('../../controllers/usersController');
+
+// -- Directs to: /api/thoughts <GET>
+router.route('/').get(getAllUsers);
+
+// -- Directs to: /api/thoughts/:id <GET, PUT, DELETE>
+router.route('/:id').get(getUserById).put(updateUsers).delete(deleteUser);
+
+// -- Directs to: /api/thoughts/:userId <POST>
+router.route('/:userId').post(createUser);
+
+// -- Directs to: /api/thoughts/:thoughtId/reactions <POST>
+router.route('/:thoughtId/reactions').post(addFriend);
+
+// -- Directs to: /api/thoughts/:thoughtId/reactionId <DELETE>
+router.route('/:thoughtId/reactions/:reactionId').delete(deleteFriend);
 
 module.exports = router;

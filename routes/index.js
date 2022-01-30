@@ -1,10 +1,8 @@
 const router = require('express').Router();
 
-const thoughtsRoutes = require('./api/thoughts-routes');
-const usersRoutes = require('./api/users-routes');
+const apiRoutes = require('./api/thoughts-routes');
 
-router.use('/api/thoughts', thoughtsRoutes)
-router.use('/api/users', usersRoutes);
+router.use('/', apiRoutes);
 
 router.use((req, res) => {
     res.status(404).send('404 Error... route not found');
