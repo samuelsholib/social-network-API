@@ -1,10 +1,9 @@
 const router = require('express').Router();
 
-const apiRoutes = require('./api/thoughts-routes');
+ const apiRoutes = require('./api');
 
-router.use('/', apiRoutes);
+// add prefix of /api to all of the api routes
+router.use('/api', apiRoutes);
 
-router.use((req, res) => {
-    res.status(404).send('404 Error... route not found');
-});
+
 module.exports = router;

@@ -25,8 +25,9 @@ const ThoughtsRoutesControllers = {
                 res.json(dbThoughtsData)
             })
             .catch(err => {
-                console.log(err).json(err);
-            })
+                console.log(err);
+                res.status(400).json(err);
+            });
 
     },
 
@@ -44,8 +45,9 @@ const ThoughtsRoutesControllers = {
                 res.json(dbThoughtsData)
             })
             .catch(err => {
-                console.log(err).json(err);
-            })
+                console.log(err);
+                res.status(400).json(err);
+            });
     },
 
     //Update  an existing thought
@@ -61,8 +63,9 @@ const ThoughtsRoutesControllers = {
                 res.json(dbThoughtsData);
             })
             .catch(err => {
-                console.log(err).json(err);
-            })
+                console.log(err);
+                res.status(400).json(err);
+            });
     },
 
     // find and delete a Thought
@@ -75,7 +78,10 @@ const ThoughtsRoutesControllers = {
                 }
                 res.json(dbThoughtsData);
             })
-            .catch(err => res.status(500).json(err));
+            .catch(err => {
+                console.log(err);
+                res.status(400).json(err);
+            });
     },
 
 
@@ -92,7 +98,10 @@ const ThoughtsRoutesControllers = {
                 }
                 res.json(dbThoughtsData);
             })
-            .catch(err => res.status(500).json(err))
+            .catch(err => {
+                console.log(err);
+                res.status(400).json(err);
+            });
 
     },
 
@@ -107,7 +116,10 @@ const ThoughtsRoutesControllers = {
                 }
                 res.json(dbThoughtsData);
             })
-            .catch(err => res.status(400).json(err));
+            .catch(err => {
+                console.log(err);
+                res.status(400).json(err);
+            });
     }
 
 };
