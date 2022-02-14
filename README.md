@@ -73,4 +73,4 @@ To start the App;
 Or ```http://localhost:3001/api/thoughts``` to get thoughts
 
 
-### Thank you for going through my readme!!!
+- Thank you for going through my readme!!!
