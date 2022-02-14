@@ -68,3 +68,6 @@ To start the App;
 - Select the Open In Integrated Terminal option
 - Then type ```node server.js```
 - Or ```npm start```
+
+Once the app is turned on, follow the link I have in the Console or go to any browser, Postman, or insomnia and type ```http://localhost:3001/api/users``` to get users
+Or ```http://localhost:3001/api/thoughts``` to get thoughts
