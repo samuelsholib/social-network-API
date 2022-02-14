@@ -15,7 +15,7 @@
 ```
 MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. Over the last part of this course, I’ll use several of the technologies that social networking platforms use in their full-stack applications. Because the foundation of these applications is data, it’s important that I understand how to build and structure the API first.
 
-This homework is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I used Express.js for routing, a MongoDB database, and the Mongoose ODM to add raw datas. In addition to using the [Express.js](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose) packages,  I also , Used [moment.js] (https://momentjs.com/) to Parse, validate, manipulate, and display dates and times in my JavaScript code.
+This is a back-end application. It was built to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I used Express.js for routing, a MongoDB database, and the Mongoose ODM to add raw datas. In addition to using the [Express.js](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose) packages,  I also , Used [moment.js] (https://momentjs.com/) to Parse, validate, manipulate, and display dates and times in my JavaScript code.
 No seed data is provided, so I seeded some values to my database collections using Insomnia after I’ve created my API.
 ```
 
