@@ -9,6 +9,7 @@
 - [Acceptance Criteria](#Acceptance-Criteria)
 
 - [Installation](#Installation)
+- [Start-Command](#Start-Command)
 
 ## My-Task
 
@@ -60,3 +61,10 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 - npm install moment
 
 ```
+
+## Start-Command
+To start the App; 
+- Right click on server.js file
+- Select the Open In Integrated Terminal option
+- Then type ```node server.js```
+- Or ```npm start```
