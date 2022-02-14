@@ -71,3 +71,6 @@ To start the App;
 
 - Once the app is turned on, follow the link I have in the Console or go to any browser, Postman, or insomnia and type ```http://localhost:3001/api/users``` to get users
 Or ```http://localhost:3001/api/thoughts``` to get thoughts
+
+
+### Thank you for going through my readme!!!
