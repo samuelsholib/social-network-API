@@ -24,7 +24,7 @@ No seed data is provided, so I seeded some values to my database collections usi
 
 ```
 Because this application won’t be deployed, I have created a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met.
-The vedeo will be found here: ```https://youtu.be/YKGTeFTOaK0)```
+The vedeo will be found here: ```https://youtu.be/YKGTeFTOaK0```
 ```
 
 ## User-Story
